@@ -1,7 +1,6 @@
 package domain;
 
-import jakarta.enterprise.context.ApplicationScoped;
-
+import javax.enterprise.context.ApplicationScoped;
 import java.util.List;
 
 @ApplicationScoped

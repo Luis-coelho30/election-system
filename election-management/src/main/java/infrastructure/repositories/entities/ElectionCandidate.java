@@ -1,7 +1,7 @@
 package infrastructure.repositories.entities;
 
-import jakarta.persistence.EmbeddedId;
-import jakarta.persistence.Entity;
+import javax.persistence.EmbeddedId;
+import javax.persistence.Entity;
 
 @Entity(name = "election_candidate")
 public class ElectionCandidate {

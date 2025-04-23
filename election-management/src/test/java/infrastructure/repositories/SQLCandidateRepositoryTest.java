@@ -4,9 +4,10 @@ import domain.CandidateRepository;
 import domain.CandidateRepositoryTest;
 import io.quarkus.test.TestTransaction;
 import io.quarkus.test.junit.QuarkusTest;
-import jakarta.inject.Inject;
-import jakarta.persistence.EntityManager;
 import org.junit.jupiter.api.AfterEach;
+
+import javax.inject.Inject;
+import javax.persistence.EntityManager;
 
 import static org.junit.jupiter.api.Assertions.*;
 

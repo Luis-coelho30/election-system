@@ -4,12 +4,12 @@ import api.CandidateApi;
 import api.dto.in.CreateCandidate;
 import api.dto.in.UpdateCandidate;
 import api.dto.out.Candidate;
-import jakarta.transaction.Transactional;
-import jakarta.ws.rs.*;
-import jakarta.ws.rs.core.MediaType;
 import org.jboss.resteasy.reactive.ResponseStatus;
 import org.jboss.resteasy.reactive.RestResponse;
 
+import javax.transaction.Transactional;
+import javax.ws.rs.*;
+import javax.ws.rs.core.MediaType;
 import java.util.List;
 
 @Produces(MediaType.APPLICATION_JSON)

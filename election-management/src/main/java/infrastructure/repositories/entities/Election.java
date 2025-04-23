@@ -1,7 +1,8 @@
 package infrastructure.repositories.entities;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
+
+import javax.persistence.Entity;
+import javax.persistence.Id;
 
 @Entity(name = "elections")
 public class Election {

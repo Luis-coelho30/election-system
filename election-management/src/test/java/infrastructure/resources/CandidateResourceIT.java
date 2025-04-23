@@ -5,11 +5,11 @@ import api.dto.in.UpdateCandidate;
 import api.dto.out.Candidate;
 import io.quarkus.test.common.http.TestHTTPEndpoint;
 import io.quarkus.test.junit.QuarkusIntegrationTest;
-import jakarta.ws.rs.core.MediaType;
 import org.instancio.Instancio;
 import org.jboss.resteasy.reactive.RestResponse;
 import org.junit.jupiter.api.Test;
 
+import javax.ws.rs.core.MediaType;
 import java.util.UUID;
 
 import static io.restassured.RestAssured.given;

@@ -4,13 +4,13 @@ import api.dto.in.CreateCandidate;
 import api.dto.in.UpdateCandidate;
 import domain.Candidate;
 import domain.CandidateService;
-import io.quarkus.test.InjectMock;
 import io.quarkus.test.junit.QuarkusTest;
-import jakarta.inject.Inject;
+import io.quarkus.test.junit.mockito.InjectMock;
 import org.instancio.Instancio;
 import org.junit.jupiter.api.Test;
 import org.mockito.ArgumentCaptor;
 
+import javax.inject.Inject;
 import java.util.UUID;
 
 import static org.junit.jupiter.api.Assertions.*;

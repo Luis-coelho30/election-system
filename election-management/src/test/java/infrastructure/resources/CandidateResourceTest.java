@@ -4,15 +4,14 @@ import api.CandidateApi;
 import api.dto.in.CreateCandidate;
 import api.dto.in.UpdateCandidate;
 import api.dto.out.Candidate;
-import io.quarkus.test.InjectMock;
 import io.quarkus.test.common.http.TestHTTPEndpoint;
 import io.quarkus.test.junit.QuarkusTest;
-import jakarta.inject.Inject;
-import jakarta.ws.rs.core.MediaType;
+import io.quarkus.test.junit.mockito.InjectMock;
 import org.instancio.Instancio;
 import org.jboss.resteasy.reactive.RestResponse;
 import org.junit.jupiter.api.Test;
 
+import javax.ws.rs.core.MediaType;
 import java.util.Arrays;
 
 import static io.restassured.RestAssured.given;
