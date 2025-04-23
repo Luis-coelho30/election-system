@@ -61,9 +61,13 @@ services:
       # dockerfile: src/main/docker/Dockerfile.native
       dockerfile: src/main/docker/Dockerfile.jvm
     image: dio/result-app:${TAG:-1.0.0}
+    environment:
+      - QUARKUS_REST_CLIENT_ELECTION_MANAGEMENT_URL=http://election-management:8080
     labels:
+      - traefik.http.middlewares.headers.headers.accesscontrolalloworiginlist=*
       - traefik.http.routers.result-app.rule=Host(`vote.dio.localhost`) && Path(`/`)
       - traefik.http.routers.result-app.entrypoints=web
+      - traefik.http.routers.result-app.middlewares=headers
 
   # DATABASE - https://quarkus.io/guides/datasource
 

@@ -5,6 +5,7 @@ import domain.CandidateRepositoryTest;
 import io.quarkus.test.TestTransaction;
 import io.quarkus.test.junit.QuarkusTest;
 import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.BeforeEach;
 
 import javax.inject.Inject;
 import javax.persistence.EntityManager;
@@ -25,7 +26,7 @@ class SQLCandidateRepositoryTest extends CandidateRepositoryTest {
         return repository;
     }
 
-    @AfterEach
+    @BeforeEach
     @TestTransaction
     void tearDown() {
         entityManager.createNativeQuery("TRUNCATE TABLE candidates").executeUpdate();
